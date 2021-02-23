@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8">     
+    </head>
+    <body>
+        <header>
+            <ul id ="listeOption"></ul>
+        </header>
+        <div id="zoneTexte"></div>
+        <div id="Option"></div>
+    </body>
+</html>
+
+<script src="GenerationHTML/Tableau.js"></script>
+<script type="text/javascript" >
+    var zoneDeTexte = document.createElement('textarea');
+    zoneDeTexte.setAttribute("id", "laZoneDeTexte");
+    zoneDeTexte.setAttribute("wrap", "on")
+    zoneDeTexte.setAttribute("style","width: 50%; height: 80%;")
+    document.getElementById('zoneTexte').appendChild(zoneDeTexte);
+    function clean(id){
+        document.getElementById(id).innerHTML = "";
+    }
+</script>  
