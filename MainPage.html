@@ -1,13 +1,16 @@
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="leCss.css" media="screen" />
         <meta charset="utf-8">     
     </head>
     <body>
         <header>
             <ul id ="listeOption"></ul>
         </header>
-        <div id="zoneTexte"></div>
-        <div id="Option"></div>
+        <div class = "zoneDeCode">
+            <div id="zoneTexte" class="zoneTexte"></div>
+            <div id="Option" class="zoneOption"></div>
+        </div>
     </body>
 </html>
 
@@ -16,9 +19,6 @@
     var zoneDeTexte = document.createElement('textarea');
     zoneDeTexte.setAttribute("id", "laZoneDeTexte");
     zoneDeTexte.setAttribute("wrap", "on")
-    zoneDeTexte.setAttribute("style","width: 50%; height: 80%;")
+    zoneDeTexte.setAttribute("style","width: 100%; height: 80%;")
     document.getElementById('zoneTexte').appendChild(zoneDeTexte);
-    function clean(id){
-        document.getElementById(id).innerHTML = "";
-    }
 </script>  
